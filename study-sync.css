@@ -1,0 +1,459 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    overflow-x: hidden;
+}
+body{
+    height: 100vh;
+    text-align: center;
+    background-color: #ffffff;
+    padding: 0.2rem;
+
+}
+.header-content{
+    max-width: 1280px;
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    padding: 1rem;
+    background-color:rgb(16, 15, 15);
+    justify-content: space-between;
+    
+    
+}
+.logo{
+    display: flex;
+    align-items: center;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color:black;
+    text-decoration: none;
+    gap: 0.5rem;
+    
+
+}
+.logo-icon{
+    height: 2rem;
+    width: auto;
+
+}
+.company-logo-text{
+    font-size: 1.4rem;
+    color: white;
+    font-weight: 700;
+}
+.nav{
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    font-size: 1.3rem;
+}
+.nav-link{
+    color: white;
+}
+.nav-link:hover{
+    color: rgb(95, 95, 206);
+}
+.contact-button{
+border: none;
+border-radius: 0.375rem;
+background-color: cornflowerblue;
+color: white;
+transition: all 0.2s;
+padding:0.75rem 1.5rem;
+font-size: 1rem;
+font-weight: 500;
+}
+.contact-button:hover{
+    background-color: #5254f8;
+    color: yellow;
+
+}
+.main-section{
+    max-width: 1280px;
+    display: flex;
+flex-direction: column;
+    gap: 2rem;
+    padding: 0.6rem;
+    align-items: center;
+    margin: 0 auto;
+   
+}
+.content-left{
+    text-align: center;
+    animation: slide 6s ease forwards;
+    opacity: 0;
+   
+}
+@keyframes slide {
+    0%{
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    100%{
+        opacity: 100%;
+        transform: translateX(0);
+    }
+    
+}
+.section-label{
+    font-size: 1.2rem;
+    font-weight: 600;
+    color:cornflowerblue;
+}
+.section-title{
+    font-size: 2.15rem;
+    color: black;
+    padding: 1rem;
+}
+.section-description{
+    color: #718096;
+    font-size: 1.08rem;
+
+}
+.button-group{
+    display: flex;
+    gap: 2rem;
+    padding: 1rem;
+    margin-top: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+.start-button,.tour-button{
+    border-radius: 0.375rem;
+background-color: cornflowerblue;
+color: white;
+transform: all 0.2s;
+padding:0.75rem 1.5rem;
+font-size: 1rem;
+font-weight: 500;
+
+
+}
+.tour-button{
+    background-color: #718096;
+}
+.content-right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.img-container{
+    border-radius: 0.825rem;
+    overflow: hidden;
+    box-shadow: 4px 0px  4px black;
+    height: 57vh;
+}
+.section-image{
+    height: 100%;
+    width: 100%;
+
+}
+@media screen and (min-width:768px){
+    .main-section{
+        flex-direction: row;
+    }
+    .content-left{
+        max-width: 50%;
+        text-align: left;
+    }
+    .section-left{
+        padding-left: 0;
+    }
+    .button-group{
+        justify-content: start;
+        padding-left: 0;
+    }
+    .section-label{
+        font-size: 0.8rem;
+        margin-left: 1.2rem;
+    }
+    .section-title{
+        font-size: 2.4rem;
+    }
+    .img-container{
+        height: 70vh;
+    }
+    .section-description{
+        font-size: 1rem;
+        width: 80%;
+        margin-left:1.2rem ;
+    }
+    
+}
+.company-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    animation: slide 6s ease forwards;
+}
+.company-grid{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 3rem;
+    padding: 1rem;
+    background-color: lightgrey;
+    border: none;
+    border-radius: 0.765rem;
+    margin-top: 1.5rem;
+    
+}
+.company-logo{
+font-size: 1rem;
+font-weight: 500;
+display: flex;
+gap: 0.7rem;
+}
+.google-logo{
+    height: 1.2rem;
+}
+.logo-text{
+    color: white;
+    font-size: 1rem;
+}
+@media screen  and (min-width:640px){
+    .company-grid{
+        grid-template-columns: repeat(4,1fr);
+        width: 100%;
+    }
+    .company-container h2{
+        font-size: 2rem;
+        margin-top: 2rem;
+    }
+
+
+    
+}
+.logo-text:hover{
+    color: black;
+}
+.advantage {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.advantage h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  color: grey;
+  margin-bottom: 40px;
+}
+
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.card {
+ min-height: 10rem;
+  padding: 2rem;
+  border-radius: 12px;
+  color:white;
+  text-align: center;
+  transition: 0.2s;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+
+.icon {
+  font-size: 28px;
+  margin-bottom: 10px;
+  background-color: white;
+  height: 8rem;
+  width: 9rem;
+  
+}
+
+
+.blue { background: #4a7bd1; }
+.pink { background: #ff4f7b; }
+.orange { background: #f4a340; }
+.teal { background: #3db6b1; }
+.green { background: #5fa65a; }
+.purple { background: #6b63a9; }
+
+@media (max-width: 900px) {
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
+}
+.feature{
+    height: 110px;
+}
+.testimonial-container{
+    background-color: #ffffff;
+    padding:  2rem;
+    margin: 0 auto;
+    max-width: 1280px;
+}
+.testimonial-content h2{
+    font-size: 1.93443rem;
+    font-weight: bold;
+}
+.testimonial-grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 2rem;
+    overflow: hidden;
+    
+}
+.testimonial-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+.testimonial-card{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    border-radius: 1rem;
+    box-shadow:10px 10px 20px  black;
+    padding: 2rem;
+    width: 80%;
+    gap: 1.6rem;
+    transition: transform 1.2s ease;
+  
+
+}
+.testimonial-card:hover{
+    transform: scale(1.09);
+}
+.testimonial-avatar img{
+    height: 5rem;
+    width: 5rem;
+}
+.testimonial-text{
+    font-size: 1.02rem;
+    
+}
+.testimonial-details h3{
+    font-size: 1.3rem;
+}
+.testimonial-details p{
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.footer {
+  background: #f9fafb;
+  padding: 3rem 1rem;
+  margin-top: 4rem;
+}
+
+
+.footer-container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+
+
+.footer-left {
+  max-width: 250px;
+}
+
+.footer-left .logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 700;
+}
+
+.tagline {
+  margin: 1rem 0;
+  color: #6b7280;
+}
+
+
+.socials {
+  display: flex;
+  gap: 1rem;
+  font-size: 1.2rem;
+  color: #6b7280;
+}
+
+.socials i:hover {
+  color: cornflowerblue;
+  cursor: pointer;
+}
+
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 3rem;
+}
+
+.footer-column {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.footer-column h4 {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.footer-column a {
+  color: #6b7280;
+  font-size: 0.9rem;
+}
+
+.footer-column a:hover {
+  color: cornflowerblue;
+}
+
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid #ddd;
+  font-size: 0.8rem;
+  color: #6b7280;
+}
+
+
+@media (max-width: 900px) {
+  .footer-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 500px) {
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+}
